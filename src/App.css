@@ -1,0 +1,12 @@
+/** Mount element & Base container **/
+
+/* @import url("assets/fonts/stylesheet.css"); */
+
+.App {
+  background-color: var(--background);
+  color: var(--foreground);
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding-top: 76px;
+}

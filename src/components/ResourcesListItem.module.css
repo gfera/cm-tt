@@ -1,0 +1,27 @@
+.greenCircle,
+.redCircle {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: .25rem;
+}
+
+.greenCircle {
+  background-color: var(--status-success);
+}
+
+.redCircle {
+  background-color: var(--status-error);
+}
+
+
+
+@media (max-width:900px) {
+
+  .greenCircle,
+  .redCircle {
+    width: 1rem;
+    height: 1rem;
+  }
+}

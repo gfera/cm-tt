@@ -1,0 +1,93 @@
+.modal {
+  background-color: rgba(0, 0, 0, .8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+
+.modalIn {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.modalInActive {
+  background-color: rgba(0, 0, 0, .8);
+  transition: background-color .3s ease-in-out;
+}
+
+.modalOut {
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.modalOutActive {
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color .3s ease-in-out;
+}
+
+
+/******************************************/
+.content {
+  background-color: black;
+  border: 1px solid var(--soft-dark);
+  min-width: 33%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.contentIn {
+  transform: translateY(10%) scale(0.95);
+  opacity: 0;
+}
+
+.contentInActive {
+  transition: transform .4s cubic-bezier(0.22, 1, 0.36, 1), opacity .3s cubic-bezier(0.22, 1, 0.36, 1);
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.contentOut {
+  transform: translateY(0) scale(1);
+}
+
+.contentOutActive {
+  transform: translateY(10%) scale(0.9);
+  opacity: 0;
+  transition: transform .2s cubic-bezier(0.64, 0, 0.78, 0), opacity .2s cubic-bezier(0.64, 0, 0.78, 0);
+}
+
+/******************************************/
+
+
+.title {
+  font-size: 1.725rem;
+  line-height: 28px;
+  font-weight: 500;
+  background-color: var(--soft-dark);
+  padding: 20px 12px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title>span {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.close {
+  padding: 8px 12px;
+  background-color: transparent;
+}
+
+.close:focus {
+  outline-style: none;
+
+}
